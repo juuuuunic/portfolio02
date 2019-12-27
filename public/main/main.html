@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>이준희사이트</title>
+    <!-- css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- chart -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>	
+</head>
+<body>
+   
+    <!-- 시작 -->
+    <header class="pages clear" data-now="0">
+        <div class="side_bar"></div>
+        <div>
+            <h1>
+                <span>i</span>
+                <span>create a more </span>
+                <span>positive future.</span>
+            </h1>
+        </div>
+    </header>
+    <section id="skills" class="pages clear" data-now="1">
+        <div class="wrap">
+            <div class="fly_wrap">
+                <div class="fly_right">
+                    <h1 class="eng">What i do</h1>
+                    <p class="eng">i do those, <span>enter those,</span></p>
+                </div>
+            </div>
+            <ul class="clear">
+                <li>
+                    <div>
+                        <img src="../img/main/skills/ps.jpg" class="img" alt="photoshop"/>
+                        <h3 class="eng">photoshop</h3>
+                    </div>
+                    <div>
+                         <p>
+                            <span>작은 px 하나까지</span>
+                            <span>놓치지 않고</span>
+                            <span>작업합니다.</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/main/skills/qi.jpg" class="img" alt="illustrator"> 
+                        <h3 class="eng">illustrator</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <span>책과 유투브를 통해</span>
+                            <span>계속해서</span>
+                            <span>공부하고 있습니다.</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/main/skills/html.jpg" class="img" alt="html_css"/>
+                        <h3 class="eng">html & css</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <span>웹표준을 준수하며</span>
+                            <span>하나의 웹사이트를</span>
+                            <span>만들 수 있습니다.</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../img/main/skills/js.jpg" class="img" alt="java"/>
+                        <h3 class="eng">javascript</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <span>웹사이트에 필요한</span>
+                            <span>간단한 애니메이션을</span>
+                            <span>구현해 낼 수 있습니다.</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="chart_box clear">
+                <div class="charts claer">
+                    <div class="chart_wrap">
+                        <canvas id="chart1" class="chart"></canvas>
+                    </div>
+                    <div class="chart_wrap">
+                        <canvas id="chart2" class="chart"></canvas>
+                    </div>
+                    <div class="chart_wrap">
+                        <canvas id="chart3" class="chart"></canvas>
+                    </div>
+                    <div class="chart_wrap">
+                        <canvas id="chart4" class="chart"></canvas>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="pages clear" data-now="2">
+        <div class="side_bar"></div>
+        <div class="wrap">
+            <ul class="ports">
+                <li>
+                    <div class="port_wrap">
+                        <div class="port">
+                            <div><img src="../img/main/port/kellogg.png" class="img" alt="port_kelog"/></div>
+                            <div class="sli_txt_wrap">
+                                <h1 class="eng">KELLOGG's</h1>
+                                <ul class="clear sli_txt">
+                                    <li>
+                                        <div class="eng">color:</div>
+                                        <div class="eng">Charles, Ray Eames</div>
+                                    </li>
+                                    <li>
+                                        <div class="eng">detail:</div>
+                                        <div>
+                                            반응형 웹페이지입니다. <br/>
+                                            관리자페이지와 함께 봐주세요.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="go_site" onclick="window.open('../kellogg/kellogg.html');">renewer</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="port_wrap">
+                        <div class="port">
+                            <div><img src="../img/main/port/admin.png" class="img" alt="port_admin"/></div>
+                            <div class="sli_txt_wrap">
+                                <h1 class="eng">ADMIN</h1>
+                                <ul class="clear sli_txt">
+                                    <li>
+                                        <div class="eng">color:</div>
+                                        <div class="eng">Charles, Ray Eames</div>
+                                    </li>
+                                    <li>
+                                        <div class="eng">detail:</div>
+                                        <div>
+                                            관리자페이지입니다. <br/>
+                                            켈로그 웹페이지와 함께 봐주세요.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="go_site" onclick="window.open('../admin/admin.html');">make</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="port_wrap">
+                        <div class="port">
+                            <div><img src="../img/main/port/foot.png" class="img" alt="port_foot"/></div>
+                            <div class="sli_txt_wrap">
+                                <h1 class="eng">THE FOOT SHOP</h1>
+                                <ul class="clear sli_txt">
+                                    <li>
+                                        <div class="eng">color:</div>
+                                        <div class="eng">Charles, Ray Eames</div>
+                                    </li>
+                                    <li>
+                                        <div class="eng">detail:</div>
+                                        <div>
+                                            스크롤에 따라 페이지가 넘어가는 웹사이트입니다. <br/>
+                                          아쉽게도 유투브에서는 스크롤이 적용되지 않습니다.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="go_site" onclick="window.open('../foot/foot.html');">renewer</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                     <div>
+                        <video id="weather_wrap" autoplay loop muted>
+                            <source class="dl_icon" src="../img/weather/01d.mp4" type="video/mp4" />
+                        </video>
+                        <div class="weather clear">					 
+                            <h2 id="bt_daily">오늘의 날씨</h2>
+                            <div class="daily">
+                                <div>
+                                    <div class="dl_area">
+                                        <span>[ 서울 ]</span> 
+                                        <button id="modal_open" class="modal_bt">도시선택</button>
+                                    </div>
+                                    <div class="dl_date"></div>
+                                    <div class="dl_temp"></div>
+                                    <div class="dl_desc"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>   
+        </div>   
+        <div id="port_lt"><i class="fa fa-angle-left"></i></div>
+		<div id="port_rt"><i class="fa fa-angle-right"></i></div>
+    </section>
+    <section id="about" class="pages clear" data-now="3">
+        <div class="wrap">
+            <div class="fly_wrap">
+                <div class="fly_right">
+                    <h1 class="eng">Who am i</h1>
+                    <p class="eng">i create a more positive future.</p>
+                </div>
+            </div>
+            <ul class="clear ab_top">
+                <li>
+                    <h3 class="eng">major</h3>
+                    <h2>국어국문학과에서 새롭게 시작했습니다.</h2>
+                    <p>
+                          기존의 전공과 연관없는 디자인과 코딩을 처음부터 시작하자고 결심하기까지 많은 고민과 흔들림이 있었습니다. 
+                        하지만 고민은 이미 충분히 했습니다.<br/>
+                          가장 어려운 첫 발을 내딛었고, 이미 선택한 길에 대해여 불안해하고 걱정할 시간에 
+                        한 단계라도 더 앞으로 나아가고 성장하기 위해 구체적인 계획을 세우고 노력할 것입니다.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="eng">future</h3>
+                    <h2>계속 좋아하고 싶습니다.</h2>
+                    <p>
+                          타인의 기대나 이목과 관계없이 내가 동경하고 좋아서 꿈꾸던 길을 걷게 된 것이 큰 행운이라고 생각합니다.
+                          '아는 자가 좋아하는 자보다 못하고, 좋아하는 자는 즐기는자보다 못하다.'라는 말이 있듯이,
+                        남들보다 늦게 시작했다는 조바심에 어중간한 성과를 내려기보다는 좋아하는 일을 즐기면서 좋은 성과를 내고싶습니다.
+                    </p>
+                </li>
+            </ul>
+
+            <ul class="ab_list">
+                <li>
+                    <img src="../img/main/who/top_birth.jpg" class="img" alt="birth"/>
+                    <div class="txt_area">
+                        <b class="eng">birth</b>
+                        <div class="hover_area">
+                            <p>
+                                햅 삐 해 피<br />
+                                94년 4월 (26세)
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/main/who/top_phone.jpg" class="img" alt="phone"/>
+                    <div class="txt_area">
+                        <b class="eng">moblie</b>
+                        <div class="hover_area">
+                            <p>
+                                010. 7172. 0722
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/main/who/top_mail.jpg" class="img" alt="mail"/>
+                    <div class="txt_area">
+                        <b class="eng">mail</b>
+                        <div class="hover_area">
+                            <p>
+                                <span>01071720722s</span>
+                                <span>@gmail.com</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/main/who/top_home.jpg" class="img" alt="home"/>
+                    <div class="txt_area">
+                        <b class="eng">home</b>
+                        <div class="hover_area">
+                            <p>
+                                인천시 계양구 효성동<br />
+                                인천 1호선 작전역
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <ul class="clear">
+            <li class="eng">
+                <h3>juuuuunii</h3>
+                <p>Copyright, juuuuunii. All rights reserved.</p>
+            </li>
+            <li>
+                <a onclick="window.open('https://github.com/juuuuunii')">
+                    <img src="../img/main/common/github-logo.png" class="img" alt="github"/>
+                </a>
+            </li>
+        </ul>
+    </footer>
+     <!-- gnb -->
+     
+    <div class="gnb">
+        <ul class="nav navs">
+            <div class="logo">
+                <img src="../img/main/common/logo.png" class="img" alt="logo"/>
+            </div>
+            <ul>
+                <li class="eng nav_bt" data-now="0">main</li>
+                <li class="eng nav_bt" data-now="1">skills</li>
+                <li class="eng nav_bt" data-now="2">portfolio</li>
+                <li class="eng nav_bt" data-now="3">introduce</li>
+            </ul>
+        </ul>
+        <ul class="toggle navs">
+            <li class="logo"><img src="../img/main/common/logo.png" class="img" alt="logo"/></li>
+            <li><i class="fa fa-bars mo_open"></i></li>
+        </ul>
+        <ul class="mo_nav">
+            <div class="outer">
+                <ul class="inner">
+                    <li class="eng nav_bt" data-now="0">main</li>
+                    <li class="eng nav_bt" data-now="1">skills</li>
+                    <li class="eng nav_bt" data-now="2">portfolio</li>
+                    <li class="eng nav_bt" data-now="3">introduce</li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <!-- weather modal. 시작 -->
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content">
+
+            <header class="w3-container">
+                <span id="modal_close" class="w3-button w3-display-topright">&times;</span>
+                <h2>도시선택</h2>
+            </header>
+
+            <div class="w3-container" style="padding:2rem">
+                <div class="selects">
+                    <select id="area" class="w3-input"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- weather modal. 종료 -->
+    <!-- js -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

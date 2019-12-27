@@ -1,0 +1,591 @@
+/*************** 초기화 ****************/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900');
+
+
+html, body {
+	margin: 0; 
+	padding: 0; 
+    font-size:16px; 
+    font-weight: 400;
+	color:#222; 
+	box-sizing: border-box; 
+	font-family: 'Noto Sans KR', sans-serif;
+	height:100%; 
+	font-weight:300;}
+h1, h2, h3, h4, h5, h6, p, span  {margin: 0; padding: 0; font-weight: 300;}
+div, ul, li, ol, dl, dd, dt{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
+table {margin:0; padding:0; border-collapse:collapse;}
+th, td {margin:0; padding:0;}
+a {text-decoration:none; color: inherit;}
+button {background-color: transparent; border: 0;}
+
+.clear {clear:both;}
+.clear:after {clear:both; content:""; display: block;}
+.img {width:100%;}
+.eng {font-family: 'Josefin Sans', sans-serif; font-weight: 500;}
+#wrap {width: 100%; height: auto;}
+
+/*************** gnb ****************/
+nav {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+nav > div {
+    width: 100%;
+    max-width: 1280px;
+    height: 70px;
+    line-height: 70px;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+nav .logo_box {
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.logo {width: 20%; margin: 0 auto;}
+.logo_bk {display: none;}
+nav .nav_box {
+    width: calc(100% - 200px);
+    max-width: 1000px;
+    height: 70px;
+    line-height: 70px;
+    border-left: 1px solid #e0e0e0;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+}
+nav .nav_box > .web_nav {
+    width: auto;
+    height: auto;
+}
+nav .nav_box > .web_nav > li {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin-left: 5%;
+    cursor: pointer;
+    color: #fff;
+
+}
+/*mo_nav*/
+nav .nav_box > .mo_nav, .m_nav {display: none;}
+.m_nav {position: fixed; top: 0px;left: 0px;width: 100%; height: 100%; z-index: 9998; background-color: rgba(0, 0, 0, .6);}
+.m_nav > .outer {width: 100%; height: 100%; display: table; text-align: center;}
+.outer > .inner {width: 100%; height: 100%; display: table-cell; vertical-align: middle;}
+.outer > .inner > li {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 0px;    
+}
+
+
+
+.dn_bg {background-color:#fff; border-bottom: 1px solid #ccc;}
+/*************** fly ****************/
+.blank {width: 200px; height: 50px; float: left;}
+.title{
+    width: calc(100% - 200px);
+    max-width: 1000px;
+    height: auto;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-left: 1px solid #2a2a2a;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.tit_txt h1 {font-size: 50px;}
+.tit_txt p {font-size: 18px;}
+.fly {
+    opacity: 0;
+
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+
+    transform: translateY(50px) translateX(0px) scale(1) translate3d(0, 0, 0);
+    -webkit-transform: -webkit-translateY(50px) -webkit-translateX(0px) -webkit-scale(1) -webkit-translate3d(0, 0, 0);
+    -moz-transform: -moz-translateY(50px) -moz-translateX(0px) -moz-scale(1) -moz-translate3d(0, 0, 0);
+    -o-transform: -o-translateY(50px) -o-translateX(0px) -o-scale(1) -o-translate3d(0, 0, 0);
+}
+
+.fly_right {
+    opacity: 0;
+
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+
+    transform: translateY(0px) translateX(-100%) scale(1) translate3d(0, 0, 0);
+    -webkit-transform: -webkit-translateY(0px) -webkit-translateX(-100%) -webkit-scale(1) -webkit-translate3d(0, 0, 0);
+    -moz-transform: -moz-translateY(0px) -moz-translateX(-100%) -moz-scale(1) -moz-translate3d(0, 0, 0);
+    -o-transform: -o-translateY(0px) -o-translateX(-100%) -o-scale(1) -o-translate3d(0, 0, 0);
+}
+
+.fly1 {
+    opacity: 0;
+
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+
+    transform: translateY(100px) translateX(0px) scale(1) translate3d(0, 0, 0);
+    -webkit-transform: -webkit-translateY(100px) -webkit-translateX(0px) -webkit-scale(1) -webkit-translate3d(0, 0, 0);
+    -moz-transform: -moz-translateY(100px) -moz-translateX(0px) -moz-scale(1) -moz-translate3d(0, 0, 0);
+    -o-transform: -o-translateY(100px) -o-translateX(0px) -o-scale(1) -o-translate3d(0, 0, 0);
+}
+
+.fly2 {
+    opacity: 0;
+
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+
+    transform: translateY(100px) translateX(0px) scale(1) translate3d(0, 0, 0);
+    -webkit-transform: -webkit-translateY(100px) -webkit-translateX(0px) -webkit-scale(1) -webkit-translate3d(0, 0, 0);
+    -moz-transform: -moz-translateY(100px) -moz-translateX(0px) -moz-scale(1) -moz-translate3d(0, 0, 0);
+    -o-transform: -o-translateY(100px) -o-translateX(0px) -o-scale(1) -o-translate3d(0, 0, 0);
+}
+
+.fly3 {
+    opacity: 0;
+
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+
+    transform: translateY(100px) translateX(0px) scale(1) translate3d(0, 0, 0);
+    -webkit-transform: -webkit-translateY(100px) -webkit-translateX(0px) -webkit-scale(1) -webkit-translate3d(0, 0, 0);
+    -moz-transform: -moz-translateY(100px) -moz-translateX(0px) -moz-scale(1) -moz-translate3d(0, 0, 0);
+    -o-transform: -o-translateY(100px) -o-translateX(0px) -o-scale(1) -o-translate3d(0, 0, 0);
+}
+
+.fly4 {
+    opacity: 0;
+
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+
+    transform: translateY(100px) translateX(0px) scale(1) translate3d(0, 0, 0);
+    -webkit-transform: -webkit-translateY(100px) -webkit-translateX(0px) -webkit-scale(1) -webkit-translate3d(0, 0, 0);
+    -moz-transform: -moz-translateY(100px) -moz-translateX(0px) -moz-scale(1) -moz-translate3d(0, 0, 0);
+    -o-transform: -o-translateY(100px) -o-translateX(0px) -o-scale(1) -o-translate3d(0, 0, 0);
+}
+.show-block {
+    opacity: 1;
+
+    transform: translateY(0px) translateX(0px) scale(1) translate3d(0, 0, 0);
+    -webkit-transform: -webkit-translateY(0px) -webkit-translateX(0px) -webkit-scale(1) -webkit-translate3d(0, 0, 0);
+    -moz-transform: -moz-translateY(0px) -moz-translateX(0px) -moz-scale(1) -moz-translate3d(0, 0, 0);
+    -o-transform: -o-translateY(0px) -o-translateX(0px) -o-scale(1) -o-translate3d(0, 0, 0);
+}
+
+/*************** header ****************/
+#header {
+    width: 100%;
+    height: 780px; 
+    position: relative; 
+    top: 0; 
+    left: 0;
+    background: url("../img/main/common/top_bg.png") no-repeat center center;
+}
+
+.head_box {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+.side_bar {
+    top: 0px;
+    left: 240px;
+    width: 1px;
+    height: 100%;
+    background-color: #e0e0e0;
+    position: absolute;
+    z-index: 120;
+}
+
+/*************** skills ****************/
+#skills {width: 100%; height: auto; padding: 150px 0 180px; position: relative;}
+#skills > div {width: 100%; max-width: 1280px; margin: 0 auto; height: auto; padding: 0 40px; box-sizing: border-box; position: relative;}
+
+#skills .what_i_do {width: 100%; height: auto; margin-top: 120px;}
+.what_i_do > li {width: 25%; height: auto; float: left;}
+.do_icon {width: 100%; height: 160px; border-bottom: 1px solid #b7b7b7; text-align: center; padding-bottom: 35px; box-sizing: border-box;}
+.do_icon h3 {font-size: 18px; margin: 0;}
+.do_icon h3 > span {display: block;}
+.do_icon h3 > :last-child {font-size: 20px; font-weight: 600;}
+.fly1 h3 span:last-child {color: #2660a0;}
+.fly2 h3 span:last-child {color: #ffa800;}
+.fly3 h3 span:last-child {color: #28a38e;}
+.fly4 h3 span:last-child {color: #f35556;}
+.do_icon > .icon_img {width: 100%; height: 85px;}
+.fly1 .icon_img {background: url(../img/main/skills/ps.png) no-repeat center center; background-size: auto 53px;}
+.fly2 .icon_img {background: url(../img/main/skills/ai.png) no-repeat center center; background-size: auto 53px;}
+.fly3 .icon_img {background: url(../img/main/skills/html.png) no-repeat center center; background-size: auto 53px;}
+.fly4 .icon_img {background: url(../img/main/skills/js.png) no-repeat center center; background-size: auto 53px;}
+.do_txt {width: 100%; height: 150px; text-align: center; padding-top: 35px; box-sizing: border-box;}
+.do_txt > span {display: block; color: #b7b7b7; line-height: 30px;}
+
+/*************** portfolio ****************/
+#portfolio {width: 100%; height: 780px; box-sizing: border-box; position: relative; top: 0; left: 0;}
+#portfolio #ports {width: 100%; height: 780px; overflow: hidden;}
+#portfolio #ports > li {width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: none;}
+#portfolio #ports > :last-child {display: block;}
+.port_box {width: 100%; height: 100%; position: relative;}
+.port_img {position: absolute; top: 0px; left: 0px; width: 100%; height: 780px; background-color: #2a2a2a; overflow: hidden;}
+.port_img > img {opacity: .6; width: 100%; height: 100%;}
+.port_tit {width: 100%; max-width: 1280px; height: 100%; margin: 0 auto; padding: 0 40px; box-sizing: border-box; position: relative;}
+.port_txt {position: absolute; bottom: 250px; left: 200px; width: calc(100% - 200px); max-width: 1000px; height: auto; padding-left: 100px; box-sizing: border-box;}
+.weather_txt {bottom: 200px;}
+.port_txt h4 {font-size: 20px; color: #fff; margin-bottom: 10px; color: #ffc116;}
+.port_txt h1 {font-size: 50px; color: #fff; line-height: 30px; padding-top: 20px;}
+.port_txt p{padding:20px 0; color:#cfcfcf; font-size: 20px;}
+.port_txt button {
+    margin-top:60px;
+    width: 170px;
+    height: 45px;
+    line-height: 43px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.port_txt button:hover {background-color: #fff; color: #222;}
+
+@keyframes portBtAni {
+    0% {width:0;}
+   100% {width: 100%}
+}
+
+
+
+.port:last-child .port_tit {position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 1;}
+.port:last-child button {margin: 40px 0;}
+.daily{padding-top:50px;}
+.dl_area > span {display: block; color: #ffc116; font-size: 30px;}
+.wk_area{font-size: 1.25em;  color: rgb(2, 39, 95); font-weight: bold;}
+.wk_date{font-size: 1.25em;  color: rgb(66, 66, 66);}
+.wk_temp{font-size: 1.2vw;  color: rgb(8, 52, 102);}
+.wk_desc{font-size: 1.25em;  color: rgb(177, 177, 177);}
+.dl_date{font-size: 20px; color: rgb(66, 66, 66);}
+.dl_temp{font-size: 30px; font-weight: 500; color: rgb(8, 52, 102);}
+.dl_desc{font-size: 20px; color: #ffcd16;}
+.wk_area{font-size: 1.25em;  color: rgb(2, 39, 95); font-weight: bold;}
+.wk_date{font-size: 1.25em;  color: rgb(66, 66, 66);}
+.wk_temp{font-size: 1.2vw;  color: rgb(8, 52, 102);}
+.wk_desc{font-size: 1.25em;  color: rgb(177, 177, 177);}
+#modal {z-index:9999; position: fixed;}
+
+
+/*************** introduce ****************/
+#introduce {width: 100%; height: auto; padding: 150px 0 180px;}
+#introduce > div {width: 100%; max-width: 1280px; margin: 0 auto; height: auto; padding: 0 40px; box-sizing: border-box;}
+.about_me {margin-top: 120px;}
+.ab_txt {
+    width: calc(100% - 200px);
+    max-width: 1000px;
+    height: auto;
+    border-left: 1px solid #e0e0e0;
+    padding: 0px 0px 90px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.ab_txt > div {width: 100%; height: auto; padding-left: 30px; box-sizing: border-box;}
+.ab_intro ul {float: left;}
+.ab_intro ul > li, .ab_more p {color: #959595;}
+.ab_intro ul:first-child {width: 100px;}
+
+
+/*************** footer ****************/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #111111;
+}
+footer > div {
+    width: 100%;
+    height: auto;
+    padding: 45px 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.footer > li {float: left; cursor: pointer;}
+.footer > :first-child {width: 4%; float: left;}
+.footer > :nth-child(2) p {color: #fff; line-height: 80px; margin-left: 50px;}
+.footer > :last-child {width: 4%; float: right; padding-top: 10px;}
+
+
+
+@media (max-width: 1340px) and (min-width: 1024px) { 
+    #header {height: 640px;}
+    #skills {padding: 120px 0px 150px;}
+    #skills .what_i_do {margin-top: 90px;}
+    #portfolio {height: auto;}
+    #portfolio #ports {height: 700px;}
+    .port_img {height: 640px;}
+    .port_tit {padding: 0 30px;}
+    .port_txt button {margin-top: 40px;}
+    #introduce {padding: 120px 0px 60px;}
+
+}
+
+@media (max-width: 1023px) and (min-width: 750px) { 
+    nav {height: 60px;}
+    nav > div {height: 60px; line-height: 60px; padding: 0 15px;}
+    nav .logo_box {
+        width: 135px;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 0px;
+    }
+    nav .nav_box {
+        width: calc(100% - 135px);
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 0px;
+    }
+    .side_bar {left: 150px;}
+    .blank {width: 135px;}
+    .title {width: calc(100% - 135px); padding-left: 16px;}
+    .tit_txt h1 {font-size: 36px;}
+    .tit_txt p {font-size: 16px;}
+    #header {height: 520px;}
+    .head_box {padding: 0 15px;}
+    #skills {padding: 90px 0px 90px;}
+    #skills > div {padding: 0 15px;}
+    #skills .what_i_do {margin-top: 60px;}
+    .daily {padding-top: 30px;}
+    .do_icon {height: 130px; padding-bottom: 15px;}
+    .do_icon > .icon_img {height: 60px;}
+    .do_icon h3 {padding-top: 8px;}
+    .do_icon h3 > :first-child {font-size: 16px;}
+    .icon_img {height: 60px;}
+    .do_txt {height: auto;}
+    #portfolio {height: auto;}
+    #portfolio #ports {height: 520px;}
+    #portfolio #ports > li {height: 520px;}
+    .port_img {height: 520px;}
+    .port_tit {padding: 0 15px;}
+    .port_txt {bottom: 180px; padding-left: 15px; left: 120px;}
+    .port_txt h1 {font-size: 36px; margin: 10px 0 20px;}
+    .port_txt button {width: 150px; height: 40px; line-height: 30px; font-size: 14px; margin-top: 30px;}
+    
+    .port:last-child button {margin: 20px 0;}
+    #introduce {padding: 90px 0px 60px;}
+    #introduce > div {padding: 0 15px;}
+    .about_me {margin-top: 90px;}
+    .ab_txt {padding: 0 0 60px;}
+    .footer > :nth-child(2) p {line-height: 60px;}
+    .footer > :last-child {width: 5%;}
+}
+
+@media (max-width: 749px) and (min-width: 480px) { 
+    nav {height: 60px;}
+    nav > div {
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 0px;
+    }
+    nav .logo_box {
+        width: 120px;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 15px;
+    }
+    .logo {width: 30%; padding-top: 10px;}
+    nav .nav_box {
+        width: calc(100% - 120px);
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 15px;
+        border-left: 0px;
+    }
+    nav .nav_box > ul {display: none;}
+    nav .nav_box > .mo_nav {display: block; text-align: right; color: #fff;}
+
+    nav .nav_box > .mo_nav > i {margin-right: 30px;} 
+    .side_bar {display: none;}
+    .blank {display: none;}
+    .title {width: 100%; height: auto; padding-left: 16px;}
+    #header {height: 400px;}
+    .head_box {padding: 0 15px;}
+    #skills {padding: 60px 0px;}
+    #skills > div {padding: 0 15px;}
+    #skills .what_i_do {margin-top: 60px;}
+    .tit_txt h1 {font-size: 24px; margin: 0;}
+    .tit_txt p {font-size: 14px;}
+    .what_i_do > li {width: 50%;}
+    .what_i_do > :nth-child(3), .what_i_do > :last-child {margin-top: 30px;}
+    .do_icon {height: 110px; padding-bottom: 15px;}
+    .do_icon h3 {padding-top: 8px; font-size: 16px;}
+    .do_icon h3 > :last-child {font-size: 18px;}
+    .do_icon > .icon_img {height: 45px;}
+    .fly1 .icon_img {background-size: auto 45px;}
+    .fly2 .icon_img {background-size: auto 45px;}
+    .fly3 .icon_img {background-size: auto 45px;}
+    .fly4 .icon_img {background-size: auto 45px;}
+    .do_txt {padding-top: 15px; height: auto;}
+    .do_txt > span {font-size: 12px; line-height: 20px;}
+    #portfolio {height: auto;}
+    #portfolio #ports {height: 330px;}
+    #portfolio #ports > li {height: 330px;}
+    .port_img {height: 330px;}
+    .port_tit {height: 100%;}
+    .port_txt {
+        top: 50%;
+        bottom: auto;
+        padding: 0px 30px;
+        left: 0px;
+        width: 100%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        text-align: center;
+    }
+    .port_txt h4 {font-size: 14px; margin: 0;}
+    .port_txt h1 {font-size: 24px; margin-bottom: 20px;}
+    .port_txt p {display: none;}
+    .port_txt button {width: 150px; height: 40px; line-height: 38px; font-size: 14px; float: none; margin-top: 20px;}
+    .port:last-child button {margin: 20px 0;}
+    .daily {padding-top: 0;}
+    .dl_area > span {font-size: 16px; margin-top: 15px;}
+    .dl_date {font-size: 15px;}
+    .dl_temp {font-size: 20px;}
+    #introduce {padding: 60px 0 30px;}
+    .about_me {margin-top: 45px;}
+    .ab_txt {width: 100%; border: 0; padding-bottom: 50px;}
+    .ab_txt > div {padding-left: 0;}
+    .ab_txt > div h2 {font-size: 20px;}
+    .ab_intro ul:last-child > li {font-size: 12px; line-height: 22px;}
+    .ab_more h5 {font-size: 16px;}
+    .ab_more p {font-size: 12px;}
+    .footer > li {margin: 0 auto; float: none;}
+    .footer > :first-child {float: none;}
+    .footer > :nth-child(2) p {margin-left: 0;}
+    .footer > :last-child {width: 5%; float: none; padding-top: 0;}
+    
+}
+
+@media (max-width: 479px) {
+    nav {height: 60px;}
+    nav > div {height: 60px; line-height: 60px; padding: 0px 0px;}
+    nav .logo_box {
+        width: 120px;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 15px;
+    }
+    .logo {width: 30%; padding-top: 10px;}
+    nav .nav_box {
+        width: calc(100% - 120px);
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 15px;
+        border-left: 0px;
+    }
+    nav .nav_box > ul {display: none;}
+    nav .nav_box > .mo_nav {display: block; text-align: right; color: #fff;} 
+    nav .nav_box > .mo_nav > i {margin-right: 30px;} 
+    .side_bar {display: none;}
+    .blank {display: none;}
+    .title {width: 100%; height: auto; padding-left: 16px;}
+    #header {height: 350px;}
+    .head_box {padding: 0 15px;}
+    #skills {padding: 45px 0px 45px;}
+    #skills > div {padding: 0 15px;}
+    #skills .what_i_do {margin-top: 45px;}
+    .tit_txt h1 {font-size: 24px; margin: 0;}
+    .tit_txt p {font-size: 14px;}
+    .what_i_do > li {width: 50%;}
+    .what_i_do > :nth-child(3), .what_i_do > :last-child {margin-top: 30px;}
+    .do_icon {height: 110px; padding-bottom: 15px;}
+    .do_icon h3 {padding-top: 8px; font-size: 16px;}
+    .do_icon h3 > :last-child {font-size: 18px;}
+    .do_icon > .icon_img {height: 45px;}
+    .fly1 .icon_img {background-size: auto 45px;}
+    .fly2 .icon_img {background-size: auto 45px;}
+    .fly3 .icon_img {background-size: auto 45px;}
+    .fly4 .icon_img {background-size: auto 45px;}
+    .do_txt {height: auto; padding-top: 15px;}
+    .do_txt > span {font-size: 12px; line-height: 20px;}
+
+    #portfolio {height: auto;}
+    #portfolio #ports {height: 250px;}
+    #portfolio #ports > li {height: 250px;}
+    .port_img {height: 250px;}
+    .port_tit {height: 100%;}
+    .port_txt {
+        top: 50%;
+        bottom: auto;
+        padding: 0px 30px;
+        left: 0px;
+        width: 100%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        text-align: center;
+    }
+    .port_txt h4 {font-size: 14px; margin: 0;}
+    .port_txt h1 {font-size: 24px; padding: 0;}
+    .port_txt p {display: none;}
+    .port_txt button {width: 120px; height: 35px; line-height: 33px; font-size: 12px; float: none; margin-top: 30px;}
+    .port:last-child button {margin: 10px 0;}
+    .daily {padding: 0;}
+    .dl_area > span {font-size: 16px; margin-top: 15px;}
+    .dl_date {font-size: 16px;}
+    .dl_temp {font-size: 20px;}
+    .dl_desc {font-size: 18px;}
+    #introduce {padding: 45px 0 60px;}
+    #introduce > div {padding: 0 15px;}
+    .about_me {margin-top: 45px;}
+    .ab_txt {width: 100%; border: 0; padding-bottom: 50px;}
+    .ab_txt > div {padding-left: 0;}
+    .ab_txt > div h2 {font-size: 16px;}
+    .ab_intro ul:last-child > li {font-size: 10px; line-height: 22px;}
+    .ab_more h5 {font-size: 14px;}
+    .ab_more p {font-size: 10px;}
+    .footer > li {margin: 0 auto; float: none;}
+    .footer > :first-child {float: none; width: 7%}
+    .footer > :nth-child(2) {padding: 40px 0;}
+    .footer > :nth-child(2) p {margin-left: 0;}
+    .footer > :nth-child(2) p > span {display: block; line-height: 30px;}
+    .footer > :last-child {width: 7%; float: none; padding-top: 0;}
+}
